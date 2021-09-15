@@ -12,40 +12,51 @@
     </head>
     <body>
         <section class="top" id="top">
+            <div id="overlay"></div>
             <div id="scroll-hide">
                 <div class="container">
                     <div class="flex header-web">
-                        <div class="header-logo">
-                            <a href="./">
-                                <img src="./images/logo1.png" >
-                            </a>
+                        <div class="flex div-menu">
+                            <div class="menu-btn">
+                                <i class="uil uil-bars"></i>
+                            </div>
+                            <div class="header-logo">
+                                <a href="./">
+                                    <img src="./images/logo1.png" >
+                                </a>
+                            </div>
+                            <div class="d3"></div>
                         </div>
                         <div class="menu-bar">
-                            <ul class="list-menu flex">
-                                    <li class="bar-item">
-                                        <a href="#">
-                                            <span class="text-hover text-hover-underline-goes-right active">
-                                                Trang chủ
-                                            </span>
-                                        </a>
+                            <ul class="list-menu flex" id="list-menu">
+                                <i class="uil uil-times close-menu"></i>
+                                <li class="bar-item">
+                                    <a href="#">
+                                        <span class="text-hover text-hover-underline-goes-right active">
+                                            Trang chủ
+                                        </span>
+                                    </a>
 
-                                    </li>
+                                </li>
                                 <li class="bar-item">
                                     <a href="#">
                                         <span class="text-hover text-hover-underline-goes-right">
-                                            Gioi thieu
+                                            Giới thiệu
                                         </span>
                                     </a>
                                 </li>
                                 <div  id="am-thuc">
                                     <li class="bar-item">
                                         <a href="#">
-                                            <span class="text-hover text-hover-underline-goes-right">
-                                                Am thuc
-                                                <i class="uil uil-angle-down"></i>
-                                            </span>
+                                            <div>
+                                                <span class="text-hover text-hover-underline-goes-right">
+                                                    Ẩm thực
+                                                </span>
+                                                <i class="uil uil-angle-down" id="bt-drop"></i>
+                                            </div>
+
                                         </a>
-                                        <div class="drowdown-content">
+                                        <div class="drowdown-content" id="drowdown-content-id">
                                             <ul>
                                                 <li><a href="#">HƯƠNG VỊ BẮC</a></li>
                                                 <li><a href="#">KHAI VỊ</a></li>
@@ -63,14 +74,14 @@
                                 <li class="bar-item">
                                     <a href="#">
                                         <span class="text-hover text-hover-underline-goes-right">
-                                            Tin tuc pho 79
+                                            Tin tức phố 79
                                         </span>
                                     </a>
                                 </li>
                                 <li class="bar-item">
                                     <a href="./phongvip.html">
                                         <span class="text-hover text-hover-underline-goes-right">
-                                            Phong vip
+                                            Phòng vip
                                         </span>
                                     </a>
                                 </li>

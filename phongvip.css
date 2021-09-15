@@ -124,3 +124,16 @@
 .lh div p {
   display: inline;
 }
+#content-phongvip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+#content-phongvip h2 {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 960px) {
+  #content-phongvip {
+    grid-template-columns: 1fr;
+  }
+}

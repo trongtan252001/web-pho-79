@@ -28,7 +28,9 @@ function showDivs(n) {
     console.log(dots[i].className);
   }
   x[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  if (dots[slideIndex - 1]) {
+    dots[slideIndex - 1].className += " active";
+  }
 }
 
 // scroll nav
@@ -55,3 +57,36 @@ function scrollUp() {
   else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
+
+//menu mobile
+var openMenu = document.querySelector(".menu-btn");
+var closeMenu = document.querySelector(".close-menu");
+var modalMenu = document.querySelector(".list-menu");
+var overlay = document.getElementById("overlay");
+openMenu.addEventListener("click", () => {
+  modalMenu.classList.add("active");
+  overlay.classList.add("active-overlay");
+});
+closeMenu.addEventListener("click", () => {
+  modalMenu.classList.remove("active");
+  overlay.classList.remove("active-overlay");
+});
+overlay.addEventListener("click", () => {
+  modalMenu.classList.remove("active");
+  overlay.classList.remove("active-overlay");
+});
+
+// dropdown mobile
+var btDrop = document.getElementById("bt-drop");
+var contentDrop = document.getElementById("drowdown-content-id");
+var i = 0;
+btDrop.addEventListener("click", () => {
+  contentDrop.classList.toggle("active");
+  i++;
+  if (i === 1) {
+    btDrop.style.transform = "rotate(270deg)";
+  } else if (i === 2) {
+    i = 0;
+    btDrop.style.transform = "rotate(0deg)";
+  }
+});

@@ -20,40 +20,51 @@
   </head>
   <body>
     <section class="top" id="top">
+        <div id="overlay"></div>
         <div id="scroll-hide">
             <div class="container">
                 <div class="flex header-web">
-                    <div class="header-logo">
-                        <a href="./">
-                            <img src="./images/logo1.png" >
-                        </a>
+                    <div class="flex div-menu">
+                        <div class="menu-btn">
+                            <i class="uil uil-bars"></i>
+                        </div>
+                        <div class="header-logo">
+                            <a href="./">
+                                <img src="./images/logo1.png" >
+                            </a>
+                        </div>
+                        <div class="d3"></div>
                     </div>
                     <div class="menu-bar">
-                        <ul class="list-menu flex">
-                                <li class="bar-item">
-                                    <a href="./">
-                                        <span class="text-hover text-hover-underline-goes-right">
-                                            Trang chủ
-                                        </span>
-                                    </a>
+                        <ul class="list-menu flex" id="list-menu">
+                            <i class="uil uil-times close-menu"></i>
+                            <li class="bar-item">
+                                <a href="./">
+                                    <span class="text-hover text-hover-underline-goes-right ">
+                                        Trang chủ
+                                    </span>
+                                </a>
 
-                                </li>
+                            </li>
                             <li class="bar-item">
                                 <a href="#">
                                     <span class="text-hover text-hover-underline-goes-right">
-                                        Gioi thieu
+                                        Giới thiệu
                                     </span>
                                 </a>
                             </li>
                             <div  id="am-thuc">
                                 <li class="bar-item">
                                     <a href="#">
-                                        <span class="text-hover text-hover-underline-goes-right">
-                                            Am thuc
-                                            <i class="uil uil-angle-down"></i>
-                                        </span>
+                                        <div>
+                                            <span class="text-hover text-hover-underline-goes-right">
+                                                Ẩm thực
+                                            </span>
+                                            <i class="uil uil-angle-down" id="bt-drop"></i>
+                                        </div>
+
                                     </a>
-                                    <div class="drowdown-content">
+                                    <div class="drowdown-content" id="drowdown-content-id">
                                         <ul>
                                             <li><a href="#">HƯƠNG VỊ BẮC</a></li>
                                             <li><a href="#">KHAI VỊ</a></li>
@@ -71,14 +82,14 @@
                             <li class="bar-item">
                                 <a href="#">
                                     <span class="text-hover text-hover-underline-goes-right">
-                                        Tin tuc pho 79
+                                        Tin tức phố 79
                                     </span>
                                 </a>
                             </li>
                             <li class="bar-item">
                                 <a href="./phongvip.html">
                                     <span class="text-hover text-hover-underline-goes-right active">
-                                        Phong vip
+                                        Phòng vip
                                     </span>
                                 </a>
                             </li>
@@ -100,45 +111,23 @@
                 <div class="mySlides" style="background-image: url(./images/lienhe.jpg); display: block; height: 380px;">
                 </div>
                 <div class="lh">
-                    <h2>PHÒNG VIP</h2>
+                    <h2>LIÊN HỆ</h2>
                     <div>
                         <a href="./" >Home</a><span>/</span>
-                        <p>Phòng Vip</p>
+                        <p>Liên hệ</p>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
-    <div>
-      <div class="grid-container">
-        <div class="grid-item">
-          <div class="sub-heading">
-            SANG TRỌNG VÀ KÍN ĐÁO
-            <div class="icons">=====***=====</div>
-            <div>
-              <p class="title-vip">
-                Nhà hàng Phố 79 cùng đường lối kiến trúc đặc biệt, như khoác lên
-                mình một chiếc hoàng bào lộng lẫy. Mỗi căn phòng bên trong đều
-                mang một màu sắc nguy nga riêng dành cho những quan khách cấp
-                cao mà chắc chắn rằng không thể nhầm vào đâu được. Với 55 phòng
-                VIP để tiếp khách riêng từ 6 đến 30 người/phòng, sảnh tiệc lớn
-                với sức chứa 120 người, sân vườn rộng 500m2, sân thượng phù hợp
-                cho những bữa tiệc BBQ dành cho 60 khách. Quý khách có thể tìm
-                hiểu rõ hơn về từng phòng tiệc đặt biệt tại đây và nếu những căn
-                phòng này là tất cả những gì mà quý khách đang tìm kiếm thì hãy
-                liên hệ ngay với chúng tôi nhé!
-              </p>
-            </div>
-          </div>
+    <section id="content-phongvip" class="container section-pading">
+        <div class="header">
+            <h2>SANG TRỌNG VÀ KÍN ĐÁO
+            </h2>
+            <p>Nhà hàng Phố 79 cùng đường lối kiến trúc đặc biệt, như khoác lên mình một chiếc hoàng bào lộng lẫy. Mỗi căn phòng bên trong đều mang một màu sắc nguy nga riêng dành cho những quan khách cấp cao mà chắc chắn rằng không thể nhầm vào đâu được. Với 55 phòng VIP để tiếp khách riêng từ 6 đến 30 người/phòng, sảnh tiệc lớn với sức chứa 120 người, sân vườn rộng 500m2, sân thượng phù hợp cho những bữa tiệc BBQ dành cho 60 khách. Quý khách có thể tìm hiểu rõ hơn về từng phòng tiệc đặt biệt tại đây và nếu những căn phòng này là tất cả những gì mà quý khách đang tìm kiếm thì hãy liên hệ ngay với chúng tôi nhé!</p>
         </div>
-        <div class="grid-item">
-            <img class="img-vip" src="./images/h5.jpg" alt="">
-        </div>
-
-      </div>
-
-    </div>
+        <img src="./images/phong-vip.jpg" alt="">
+    </section>
 
 <!-- form đặt  chỗ -->
 <section id="form" >
@@ -174,107 +163,108 @@
 
 </section>
 
-    <footer id="footer">
-        <div class="container flex">
-            <div class="col col-1">
-                <img src="./images/logo2.png" alt="" class="img-col">
-                <div>
-                    <div class="footer-title">
-                        <h3>
-                            CÔNG TY TNHH THƯƠNG MẠI – DỊCH VỤ NGÂN VIÊN
-                        </h3>
-                    </div>
-                    <div class="sub-footer">
-                        <p>
-                            MST:0311236382 do  Sở kế hoạch và đầu tư TP.Hồ Chí Minh cấp ngày 12/10/2011
-                        </p>
-                    </div>
+<footer id="footer">
+    <div class="container flex">
+        <div class="col col-1">
+            <img src="./images/logo2.png" alt="" class="img-col">
+            <div>
+                <div class="footer-title">
+                    <h3>
+                        CÔNG TY TNHH THƯƠNG MẠI – DỊCH VỤ NGÂN VIÊN
+                    </h3>
                 </div>
-                <div>
-                    <div class="footer-title">
-                        <h3>
-                            ĐỊA ĐIỂM
-                        </h3>
-                    </div>
-                    <div  class="sub-footer">
-                        <p>
-                            <span class="font-w">CN1:</span> 79 Sương Nguyệt Ánh, P.Bến Thành, Quận 2<br>PHONE: 028 3822 5979 – 0906 912 779
-                        </p>
+                <div class="sub-footer">
+                    <p>
+                        MST:0311236382 do  Sở kế hoạch và đầu tư TP.Hồ Chí Minh cấp ngày 12/10/2011
+                    </p>
+                </div>
+            </div>
+            <div>
+                <div class="footer-title">
+                    <h3>
+                        ĐỊA ĐIỂM
+                    </h3>
+                </div>
+                <div  class="sub-footer">
+                    <p>
+                        <span class="font-w">CN1:</span> 79 Sương Nguyệt Ánh, P.Bến Thành, Quận 2<br>PHONE: 028 3822 5979 – 0906 912 779
+                    </p>
 
-                    </div>
-                    <div  class="sub-footer">
-                        <p>
-                            <span class="font-w">CN2:</span> Số 5 Phạm Ngọc Thạch, P.Võ Thị Sáu , Quận 3<br>PHONE: 028 3926 2929 – 0906 912 779
-                        </p>
-                    </div>
                 </div>
-                <div>
-                    <div class="footer-title">
-                        <h3>
-                            HOTLINE
-                        </h3>
-                    </div>
-                    <span> 0966 773 279</span>
-                </div>
-                <div>
-                    <div class="sub-footer">
-                        <p>Giờ mở cửa: 10h00 – 23h30
-                        </p>
-                    </div>
+                <div  class="sub-footer">
+                    <p>
+                        <span class="font-w">CN2:</span> Số 5 Phạm Ngọc Thạch, P.Võ Thị Sáu , Quận 3<br>PHONE: 028 3926 2929 – 0906 912 779
+                    </p>
                 </div>
             </div>
-            <div class="col col-2">
-                <div class="row-1">
-                    <h3 class="sub-footer">MENU</h3>
-                    <ul>
-                        <li><a href="#">Hương vị Bắc</a></li>
-                        <li><a href="#">Khai vị</a></li>
-                        <li><a href="#">Rau và gỏi</a></li>
-                        <li><a href="#">Hải Sản</a></li>
-                        <li><a href="#">Đồng quê dân dã</a></li>
-                        <li><a href="#">Heo và bò</a></li>
-                        <li><a href="#">Sashimi</a></li>
-                        <li><a href="#">Các món khác</a></li>
-                    </ul>
+            <div>
+                <div class="footer-title">
+                    <h3>
+                        HOTLINE
+                    </h3>
                 </div>
+                <span> 0966 773 279</span>
             </div>
-            <div class="col col-3">
-                <div class="row-1">
-                    <h3 class="sub-footer">ƯU ĐÃI</h3>
-                    <ul>
-                        <li><a href="#">Ưu đãi thành viên</a></li>
-                        <li><a href="#">Thông tin ưu đãi</a></li>
-
-                    </ul>
-                </div>
-                <div class="row-2">
-                    <h3 class="sub-footer">TUYỂN DỤNG</h3>
-                    <ul>
-                        <li><a href="#">Cơ hội việc làm</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col col-4">
-                <div class="row-1">
-                    <h3 class="sub-footer">GALLERY</h3>
-                    <div class="footer-img">
-                        <img src="./images/h1.jpg" alt="">
-                        <img src="./images/h2.jpg" alt="">
-                        <img src="./images/h3.jpg" alt="">
-                        <img src="./images/h4.jpg" alt="">
-                        <img src="./images/h5.jpg" alt="">
-                    </div>
-                    <div class="btn">Xem thêm</div>
+            <div>
+                <div class="sub-footer">
+                    <p>Giờ mở cửa: 10h00 – 23h30
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="bot-footer"><span>Copyright © 2021</span></div>
+        <div class="col col-2">
+            <div class="row-1">
+                <h3 class="sub-footer">MENU</h3>
+                <ul>
+                    <li><a href="#">Hương vị Bắc</a></li>
+                    <li><a href="#">Khai vị</a></li>
+                    <li><a href="#">Rau và gỏi</a></li>
+                    <li><a href="#">Hải Sản</a></li>
+                    <li><a href="#">Đồng quê dân dã</a></li>
+                    <li><a href="#">Heo và bò</a></li>
+                    <li><a href="#">Sashimi</a></li>
+                    <li><a href="#">Các món khác</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col col-3">
+            <div class="row-1">
+                <h3 class="sub-footer">ƯU ĐÃI</h3>
+                <ul>
+                    <li><a href="#">Ưu đãi thành viên</a></li>
+                    <li><a href="#">Thông tin ưu đãi</a></li>
 
-    </footer>
-    <!-- * Scroll Top -->
-     <a href="#top" class="scrollup show-scroll" id="scroll-up2">
-         <i class="uil uil-arrow-up scrollup__icon"></i>
-    </a>
+                </ul>
+            </div>
+            <div class="row-2">
+                <h3 class="sub-footer">TUYỂN DỤNG</h3>
+                <ul>
+                    <li><a href="#">Cơ hội việc làm</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col col-4">
+            <div class="row-1">
+                <h3 class="sub-footer">GALLERY</h3>
+                <div class="footer-img">
+                    <img src="./images/h1.jpg" alt="">
+                    <img src="./images/h2.jpg" alt="">
+                    <img src="./images/h3.jpg" alt="">
+                    <img src="./images/h4.jpg" alt="">
+                    <img src="./images/h5.jpg" alt="">
+                </div>
+                <div class="btn">Xem thêm</div>
+            </div>
+        </div>
+    </div>
+    <div class="bot-footer"><span>Copyright © 2021</span></div>
+
+</footer>
+<!-- * Scroll Top -->
+ <a href="#top" class="scrollup" id="scroll-up">
+     <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
+<script src="./script.js"></script>
 
     <!-- <script>
         function scrollUp() {
